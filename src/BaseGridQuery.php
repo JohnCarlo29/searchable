@@ -2,8 +2,8 @@
 
 namespace AjCastro\Searchable;
 
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Strl
 
 abstract class BaseGridQuery
 {
@@ -118,7 +118,7 @@ abstract class BaseGridQuery
         }
 
         foreach ($columns as $column) {
-            if ($column === $columnKey || ends_with($column, ".{$columnKey}")) {
+            if ($column === $columnKey || Str::endsWith($column, ".{$columnKey}")) {
                 return $column;
             }
         }
