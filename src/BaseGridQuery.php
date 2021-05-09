@@ -3,7 +3,7 @@
 namespace AjCastro\Searchable;
 
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Strl
+use Illuminate\Support\Str;
 
 abstract class BaseGridQuery
 {
